@@ -17,5 +17,4 @@ const Img = styled.img`
   background-image: url(${(props) => props.url});
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 `
