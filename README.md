@@ -11,4 +11,8 @@
 ```
   npx create-react-app frontend
 ```
-3. 
+3. mui install
+```
+  npm install @mui/material @emotion/react @emotion/styled
+  npm install @mui/icons-material
+```
