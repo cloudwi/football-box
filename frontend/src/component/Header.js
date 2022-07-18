@@ -13,7 +13,7 @@ import MenuItem from '@mui/material/MenuItem'
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle'
 
-const pages = ['오픈 매치', '구장 예약', '팀 매치','게시판']
+const pages = ['오픈 매치', '구장 예약', '팀 매치', '게시판']
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout']
 
 const Header = () => {
