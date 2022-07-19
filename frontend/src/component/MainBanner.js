@@ -2,11 +2,23 @@ import styled from 'styled-components'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { data } from '../data'
+import Slider from 'react-slick'
 
 const MainBanner = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  }
   return (
     <div>
-      <Img url={data.image}></Img>
+      <Slider {...settings}>
+        {data.map((image) => (
+          <Img url={image.image}></Img>
+        ))}
+      </Slider>
     </div>
   )
 }
