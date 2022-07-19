@@ -11,12 +11,9 @@ import {
   Container,
 } from '@mui/material'
 
-import { LockOutlined } from '@mui/icons-material'
+import LoginIcon from '@mui/icons-material/Login'
 
 function Login() {
-
-  
-
   return (
     <Container maxWidth={'xs'}>
       <Box
@@ -27,11 +24,11 @@ function Login() {
           alignItems: 'center',
         }}
       >
-        <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-          <LockOutlined></LockOutlined>
+        <Avatar sx={{ m: 1 }}>
+          <LoginIcon></LoginIcon>
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          로그인
         </Typography>
         <TextField
           margin="normal"

@@ -18,10 +18,6 @@ const Header = () => {
   const navigate = useNavigate()
   const [anchorElNav, setAnchorElNav] = React.useState(null)
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget)
-  }
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null)
   }
@@ -89,7 +85,11 @@ const Header = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <IconButton>
+            <IconButton
+              onClick={() => {
+                navigate('/login')
+              }}
+            >
               <AccountCircleIcon fontSize="large" />
             </IconButton>
           </Box>
@@ -99,9 +99,6 @@ const Header = () => {
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              onClick={() => {
-                navigate('/login')
-              }}
               color="inherit"
             >
               <MenuIcon />
