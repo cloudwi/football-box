@@ -10,10 +10,11 @@ import {
   Box,
   Container,
 } from '@mui/material'
-
+import { useNavigate } from 'react-router-dom'
 import LoginIcon from '@mui/icons-material/Login'
 
 function Login() {
+  const navigate = useNavigate()
   return (
     <Container maxWidth={'xs'}>
       <Box
@@ -63,7 +64,7 @@ function Login() {
             <Link>Forgot password?</Link>
           </Grid>
           <Grid item>
-            <Link>Sign Up"</Link>
+            <Link onClick={()=>{navigate('/signup')}}>Sign Up</Link>
           </Grid>
         </Grid>
       </Box>
