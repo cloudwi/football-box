@@ -12,6 +12,7 @@ import MenuItem from '@mui/material/MenuItem'
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle'
 import { useNavigate } from 'react-router-dom'
+
 const pages = ['오픈 매치', '구장 예약', '팀 매치', '게시판']
 
 const Header = () => {
@@ -27,7 +28,6 @@ const Header = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <SportsSoccerIcon
-            flexGrow={0}
             sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}
           />
           <Typography
@@ -57,10 +57,12 @@ const Header = () => {
             noWrap
             component="a"
             href=""
+            onClick={() => {
+              navigate('/')
+            }}
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
@@ -70,7 +72,7 @@ const Header = () => {
           >
             Football Box
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 color="inherit"
@@ -84,7 +86,7 @@ const Header = () => {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box>
             <IconButton
               onClick={() => {
                 navigate('/login')
