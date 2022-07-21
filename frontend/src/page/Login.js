@@ -64,7 +64,9 @@ function Login() {
             <Link>Forgot password?</Link>
           </Grid>
           <Grid item>
-            <Link onClick={()=>{navigate('/signup')}}>Sign Up</Link>
+            <Link onClick={()=>{
+                navigate('/signup')
+              }}>Sign Up</Link>
           </Grid>
         </Grid>
       </Box>
