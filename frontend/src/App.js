@@ -31,7 +31,7 @@ function App() {
 
         <Route path="/signup" element={<Signup></Signup>} />
 
-        <Route path="/match" element={<div></div>} />
+        <Route path="/match/*" element={<div></div>} />
         <Route path="*" element={<div></div>} />
       </Routes>
     </div>

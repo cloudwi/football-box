@@ -3,9 +3,6 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { data } from '../data'
 import Slider from 'react-slick'
-import Box from '@mui/material/Box'
-import Grid from '@mui/material/Grid'
-
 const MainBanner = () => {
   const settings = {
     customPaging: function (i) {
