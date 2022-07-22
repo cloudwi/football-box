@@ -9,6 +9,7 @@ import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
 import { useState } from 'react'
 import Box from '@mui/material/Box'
+import Match from './component/Match'
 
 function App() {
   const [value, setValue] = useState(new Date())
@@ -23,7 +24,6 @@ function App() {
             <>
               <MainBanner></MainBanner>
               <Box sx={{ m: 5 }}></Box>
-              <Calendar onChange={setValue} value={value}></Calendar>
             </>
           }
         />
@@ -31,7 +31,7 @@ function App() {
 
         <Route path="/signup" element={<Signup></Signup>} />
 
-        <Route path="/match/*" element={<div></div>} />
+        <Route path="/match/*" element={<Match></Match>} />
         <Route path="*" element={<div></div>} />
       </Routes>
     </div>
