@@ -5,8 +5,6 @@ import Login from './page/Login'
 
 import Signup from './page/Signup'
 
-import Calendar from 'react-calendar'
-import 'react-calendar/dist/Calendar.css'
 import { useState } from 'react'
 import Box from '@mui/material/Box'
 import Match from './component/Match'
